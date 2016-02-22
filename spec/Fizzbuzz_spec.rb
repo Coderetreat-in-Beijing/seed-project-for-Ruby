@@ -1,4 +1,4 @@
-require 'Fizzbuzz.rb'
+require 'Fizzbuzz'
 
 describe Fizzbuzz do
   subject(:fizzbuzz) {described_class.new}

@@ -1,9 +1,14 @@
 
 class Fizzbuzz
-  def fizzbuzz(number)
-      return 'fizzbuzz' if number % 5 == 0 && number % 3 == 0
-      return 'fizz' if number % 3 == 0
-      return 'buzz' if number % 5 == 0
-      number
+  def fizzbuzz(num)
+      return 'fizzbuzz' if multiple_of(num, 5) && multiple_of(num, 3 )
+      return 'fizz' if multiple_of(num, 3)
+      return 'buzz' if multiple_of(num, 5)
+      num
   end
+
+  def multiple_of(num, multiple)
+    num % multiple == 0
+  end
+
 end
